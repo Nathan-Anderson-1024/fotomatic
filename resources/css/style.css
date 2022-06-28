@@ -29,7 +29,7 @@ html {
   .main-content {
     top: 2.5625rem;
     top: 4.9rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* display: flex;
     flex-direction: column; */
     max-width: 100vh;
@@ -263,10 +263,11 @@ header .mobile {
     max-height: 100vh;
     max-width: 100vh;
     width: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background-image: url("../images/banner-landingpage.jpg");
     background-position: right 1rem;
     background-repeat: no-repeat;
+    margin-top: 3.75rem;
   }
   #sign-up-cta {
     position: static;
