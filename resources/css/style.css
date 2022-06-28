@@ -23,17 +23,17 @@ html {
   overflow: hidden;
 }
 
-.image-container img {
+/* .image-container img {
   display: block;
-}
+} */
 
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
     top: 4.9rem;
     border: 1px solid green;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     max-width: 100vh;
   }
 }
@@ -363,8 +363,27 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    max-width: 100vh;
+    width: 100%;
   }
 
+  #filters-section .extra {
+    display: none;
+  }
+  #filters-section .images-container {
+    max-width: 100vh;
+    width: 100%;
+    display: flex;
+  }
+  #filters-section .image-container {
+    display: inline-block;
+    max-width: 33vh;
+    width: 100%;
+  }
+  #filters-section .image-container img {
+    max-width: 33vh;
+    width: 100%;
+  }
   #filters-section .extra {
     display: none;
   }
