@@ -304,6 +304,10 @@ header .mobile {
   #features-section .center {
     margin-bottom: 1.875rem;
   }
+  #features-section .feature-2 .content h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
 }
 
 /* Filters Section */
