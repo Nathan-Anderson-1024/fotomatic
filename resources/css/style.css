@@ -94,7 +94,8 @@ header .mobile {
 /* Query for tablets */
 @media only screen and (min-width: 760px) and (max-width: 1366px) {
   header .desktop {
-    justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     max-width: 100vh;
     width: 100%;
@@ -107,18 +108,9 @@ header .mobile {
     margin-right: 1.875rem;
   }
   header .mobile {
-    display: block;
-  }
-  
-  header .mobile ul li:nth-child(-n+3) {
     display: none;
   }
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
+  
   
   header .content {
     padding: .5rem 0;
@@ -216,22 +208,24 @@ header .mobile {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 28rem;
+    height: 43.5rem;
     max-height: 100vh;
     max-width: 100vh;
-    width: 100%;
-    /* border: 1px solid red; */
+    width: 100vh;
+    border: 1px solid red;
     background-image: url("../images/banner-landingpage.jpg");
-    background-position: right 1rem;
+    /* background-position: right 1rem; */
+    background-size: cover;
     background-repeat: no-repeat;
   }
   #sign-up-cta {
     position: static;
-    width: auto;
-    height: auto;
+    width: 100vh;
+    max-width: 100vh;
+    height: 50%;
     background-color: transparent;
     border: none;
-    /* border: 1px solid magenta; */
+    border: 1px solid magenta;
   }
 
   #sign-up-cta .content {
@@ -255,6 +249,10 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2.25rem;
   }
+  /* Test */
+  
+  
+  
 }
 /* Query for phones */
 @media only screen and (min-width: 300px) and (max-width: 660px) {
@@ -372,22 +370,35 @@ header .mobile {
 
 @media only screen and (min-width: 760px) {
   #features-section {
-    flex-flow: column;
+    flex-flow: row;
     padding: 0;
     margin-top: 1rem;
+    width: 100vh;
   }
 
   .feature {
-    margin: 0;
+    margin: 0.5rem 0.5rem;
     padding: 1.25rem 1rem 0 1rem;
   }
-  .feature-1 {
-    background-color: rgb(179, 179, 179);
-  }
+  
   #features-section .content h2 {
     font-size: 1.125rem;
     line-height: 1.3;
     font-family: 'Roboto', 'Regular';
+  }
+  #features-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 5%;
+    background-color: #f3f3f3;
+    max-width: 100vh;
+  }
+  .feature h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
   }
   #features-section .content h3 {
     line-height: 1.3;
@@ -463,6 +474,10 @@ header .mobile {
 @media only screen and (min-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #filters-section .content {
@@ -484,12 +499,12 @@ header .mobile {
   #filters-section .images-container {
     padding: 0;
     max-width: 100vh;
-    width: 100%;
+    width: 100vh;
   }
 
-  #filters-section .extra {
-    display: none;
-  }
+  /* #filters-section .extra {
+    display: block;
+  } */
   #filters-section .images-container {
     max-width: 100vh;
     width: 100%;
@@ -497,16 +512,14 @@ header .mobile {
   }
   #filters-section .image-container {
     display: inline-block;
-    max-width: 33vh;
+    max-width: 25vh;
     width: 100%;
   }
   #filters-section .image-container img {
-    max-width: 33vh;
-    width: 100%;
+    max-width: 25vh;
+    width: 25vh;
   }
-  #filters-section .extra {
-    display: none;
-  }
+  
 }
 /* Query for phones */
 @media only screen and (min-width: 300px) and (max-width: 660px) {
