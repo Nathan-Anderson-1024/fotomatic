@@ -328,6 +328,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  margin-top: 1rem;
 }
 
 .feature {
@@ -504,16 +505,15 @@ header .mobile {
     padding: 0;
     max-width: 100vh;
     width: 100%;
+    max-width: 100vh;
+    width: 100%;
+    display: flex;
   }
 
   #filters-section .extra {
     display: none;
   }
-  #filters-section .images-container {
-    max-width: 100vh;
-    width: 100%;
-    display: flex;
-  }
+  
   #filters-section .image-container {
     display: inline-block;
     max-width: 33vh;
