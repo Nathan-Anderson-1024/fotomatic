@@ -660,8 +660,27 @@ footer .copyright {
 }
 /* Query for tablets */
 @media only screen and (min-width: 760px) {
+  footer {
+    width: 100vh;
+    height: 3.875rem;
+    display: flex;
+    align-items: center;
+  }
   footer .content {
-    font-size: .625rem;
+    width: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .content .location {
+    justify-self: flex-end;
+  }
+  footer .content .copyright {
+    margin-left: 2rem;
+    color: white;
+    font-family: 'Roboto';
+  }
+  footer .content span {
+    font-size: .75rem;
   }
 }
 /* Query for phones */
