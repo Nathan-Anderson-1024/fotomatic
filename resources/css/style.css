@@ -29,7 +29,7 @@ html {
   .main-content {
     top: 2.5625rem;
     /* top: 4.9rem; */
-    /* border: 1px solid green; */
+    border: 1px solid green;
     /* display: flex;
     flex-direction: column; */
     max-width: 100vh;
@@ -212,7 +212,7 @@ header .mobile {
     max-height: 100vh;
     max-width: 100vh;
     width: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url("../images/banner-landingpage.jpg");
     /* background-position: right 1rem; */
     background-size: cover;
@@ -225,7 +225,7 @@ header .mobile {
     height: 50%;
     background-color: transparent;
     border: none;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
   }
 
   #sign-up-cta .content {
@@ -606,10 +606,6 @@ header .mobile {
     align-items: center;
   }
   
-  #quotes-section .content {
-    /* padding: 1.875rem .625rem; */
-  }
-
   #quotes-section .quote {
     font-size: 1.875rem;
     line-height: 1.1;
