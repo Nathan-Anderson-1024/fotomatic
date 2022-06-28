@@ -6,7 +6,6 @@ html {
 }
 
 .main-content {
-  position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
@@ -37,24 +36,6 @@ html {
     flex-direction: column;
     max-width: 100vh;
   }
-  /* #sign-up-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid yellow;
-    max-width: 100vh;
-    max-height: 100vh;
-
-  }
-  #sign-up-cta {
-    border: 1px solid magenta;
-  }
-  .main-content .center .header img {
-    max-width: 100vh;
-    max-height: 100vh;
-    width: 100%;
-    height: 100%;
-  } */
 }
 
 /* Header */
@@ -189,22 +170,17 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     height: 28rem;
     max-height: 100vh;
     max-width: 100vh;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url("../images/banner-landingpage.jpg");
     background-position: right 1rem;
     background-repeat: no-repeat;
-  }
-  #sign-up-section img {
-    max-width: 100vh;
-    max-width: 100vh;
-    justify-self: center;
   }
   #sign-up-cta {
     position: static;
@@ -212,11 +188,14 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
   }
 
   #sign-up-cta .content {
     margin-top: 0;
+    /* position: relative; */
+    /* top: 7rem;
+    left: -10%; */
     /* border: 1px solid red; */
     max-width: 100vh;
     width: 100%;
@@ -270,7 +249,10 @@ header .mobile {
   height: 65%;
   margin: 0 auto;
 }
-
+.feature .image-container img {
+  max-width: 100vh;
+  width: 100%;
+}
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
@@ -307,6 +289,20 @@ header .mobile {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+  .feature-1 {
+    background-color: rgb(179, 179, 179);
+  }
+  #features-section .content h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-family: 'Roboto', 'Regular';
+  }
+  #features-section .content h3 {
+    line-height: 1.3;
+  }
+  #features-section .center {
+    margin-bottom: 1.875rem;
   }
 }
 
