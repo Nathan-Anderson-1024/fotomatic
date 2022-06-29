@@ -28,7 +28,7 @@ html {
   .main-content {
     top: 2.5625rem;
     top: 4.9rem;
-    max-width: 100vh;
+    max-width: 100vw;
   }
 }
 /* Main Content Query for tablets */
@@ -475,19 +475,7 @@ header .mobile {
     line-height: 1.4;
   }
 }
-/* Features desktops */
-@media only screen and (min-width: 890px) {
-  .feature h2 {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
-  }
 
-  .feature h3 {
-    font-size: .875rem;
-    line-height: 1.4;
-  }
-}
 /* Features Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #features-section {
@@ -536,7 +524,41 @@ header .mobile {
 }
 /* Features Query for Desktop */
 @media only screen and (min-width: 1025px) {
-  
+  #features-section {
+    max-width: 100vw;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 1px solid green;
+    margin-bottom: 2.875rem;
+  }
+  #features-section .feature {
+    max-width: 100vw;
+    margin-top: 4rem;
+    border: 1px solid red;
+    padding: 0 0 0 0;
+  }
+  #features-section .center {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #features-section .image-container {
+    border: 1px solid maroon;
+    margin-bottom: 2.5rem;
+  }
+  #features-section .content h2 {
+    font-size: 2.25rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 1.2;
+    color: #4a4a4a;
+  }
+  #features-section .content h3 {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: light;
+    line-height: 1.2;
+  }
 }
 /* Filters Section */
 
