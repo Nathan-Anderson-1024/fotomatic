@@ -881,7 +881,7 @@ footer .copyright {
     width: 97vw;
     display: flex;
     justify-content: flex-end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   footer .content .location {
     justify-self: flex-end;
