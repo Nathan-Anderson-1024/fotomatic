@@ -357,6 +357,14 @@ header .mobile {
       margin-top: 8rem;
       margin-left: 8rem;
     }
+    #sign-up-section .header {
+      margin-top: 2rem;
+      margin-bottom: 1.625rem;
+    }
+    #sign-up-section .button {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
 }
 /* Query for phones */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
